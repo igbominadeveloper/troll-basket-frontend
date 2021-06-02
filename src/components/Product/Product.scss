@@ -1,0 +1,35 @@
+.Product {
+  font-size: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__banner {
+    width: 101.57px;
+    height: 98px;
+
+    border-radius: 4px;
+    margin: 3px 0;
+  }
+
+  &__details {
+    color: var(--color-dark-grey);
+
+    width: 50px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__price {
+    font-size: 12px;
+    font-weight: 600;
+
+    margin: 3px 0;
+  }
+
+  &__meta {
+    color: var(--color-dark-grey);
+  }
+}

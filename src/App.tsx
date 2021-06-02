@@ -11,7 +11,10 @@ import PopularProducts from './assets/popular-products.svg';
 import RecommendedProducts from './assets/recommended-products.svg';
 import PopularShops from './assets/popular-shops.svg';
 
+import products from './products.json';
+
 import './App.scss';
+import Product, { ProductProps } from './components/Product/Product';
 
 function App() {
   const banner = useRef<HTMLDivElement>(null);
@@ -26,7 +29,7 @@ function App() {
     <div className="App">
       <Header />
 
-      <section>
+      <section className="App__wrapper">
         <div className="App__search-container">
           <input type="text" placeholder="Search merchbuy" />
           <img src={Search} alt="Search Icon" />
@@ -39,29 +42,41 @@ function App() {
         </section>
 
         <section className="App__page-links">
-          <p>
+          <article>
             <img src={ProductCategories} alt="Product Categories" />
-            Product Categories
-          </p>
+            <p>Product Categories</p>
+          </article>
 
-          <p>
+          <article>
             <img src={PopularProducts} alt="Popular Products" />
-            Popular Products
-          </p>
+            <p>Popular Products</p>
+          </article>
 
-          <p>
+          <article>
             <img src={RecommendedProducts} alt="Recommended Products" />
-            Recommended Products
-          </p>
+            <p>Recommended Products</p>
+          </article>
 
-          <p>
+          <article>
             <img src={PopularShops} alt="Popular Shops" />
-            Shops
-          </p>
+            <p>Shops</p>
+          </article>
+        </section>
+
+        <section className="App__products">
+          {products.map((product: ProductProps) => (
+            <Product
+              key={product.name}
+              description={product.description}
+              image={product.image}
+              id={product.id}
+              price={product.price}
+              stock={product.stock}
+              name={product.name}
+            />
+          ))}
         </section>
       </section>
-      {/* Nav goes here */}
-      {/* router components go here  */}
     </div>
   );
 }
