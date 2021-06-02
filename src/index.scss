@@ -10,6 +10,8 @@ html {
 
   height: 100%;
   margin: 0;
+
+  background: var(--color-grey);
 }
 
 * {
@@ -28,6 +30,4 @@ body {
   font-family: 'Noto Sans JP';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background: var(--color-white);
 }
