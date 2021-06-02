@@ -11,10 +11,12 @@ import PopularProducts from './assets/popular-products.svg';
 import RecommendedProducts from './assets/recommended-products.svg';
 import PopularShops from './assets/popular-shops.svg';
 
+
 import products from './products.json';
 
 import './App.scss';
 import Product, { ProductProps } from './components/Product/Product';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const banner = useRef<HTMLDivElement>(null);
@@ -66,7 +68,7 @@ function App() {
         <section className="App__products">
           {products.map((product: ProductProps) => (
             <Product
-              key={product.name}
+              key={product.id}
               description={product.description}
               image={product.image}
               id={product.id}
@@ -77,6 +79,8 @@ function App() {
           ))}
         </section>
       </section>
+
+      <Footer />
     </div>
   );
 }
