@@ -1,0 +1,33 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey: #cbd6e0;
+  --font-primary: 'Noto Sans JP';
+}
+
+html {
+  box-sizing: border-box;
+
+  height: 100%;
+  margin: 0;
+
+  background: var(--color-grey);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

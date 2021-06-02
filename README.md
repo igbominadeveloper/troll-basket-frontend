@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b530c18b-7d9e-4af4-a8d1-201ea810c252/deploy-status)](https://app.netlify.com/sites/troll-basket-frontend/deploys)
+
 ## Available Scripts
 
 In the project directory, you can run:
