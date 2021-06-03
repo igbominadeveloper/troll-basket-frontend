@@ -1,7 +1,7 @@
 .Header {
   background: var(--color-white);
 
-  padding: 5px;
+  padding: 10px 5px;
 
   &__settings {
     display: flex;
@@ -58,6 +58,28 @@
 
         font-family: var(--font-primary);
       }
+    }
+  }
+
+  &__secondary-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--right-search {
+      margin-right: 20px;
+    }
+
+    img {
+      display: block;
+      width: 24px;
+      height: 24px;
     }
   }
 }

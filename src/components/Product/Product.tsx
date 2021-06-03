@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 import './Product.scss';
 
-export interface ProductProps {
+export interface ProductInterface {
   id: string;
   name: string;
   description: string;
@@ -9,14 +11,15 @@ export interface ProductProps {
   stock: number;
 }
 
-const Product: React.FC<ProductProps> = ({
+const Product: React.FC<ProductInterface> = ({
   image,
   description,
   price,
   stock,
+  id,
 }) => {
   return (
-    <article className="Product">
+    <Link className="Product" to={`/products/${id}`}>
       <img src={image} className="Product__banner" alt="Product banner" />
 
       <p className="Product__details">{description}</p>
@@ -26,7 +29,7 @@ const Product: React.FC<ProductProps> = ({
       </div>
 
       <p className="Product__meta">MOQ {stock} (pieces)</p>
-    </article>
+    </Link>
   );
 };
 
