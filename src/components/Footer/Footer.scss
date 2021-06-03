@@ -45,11 +45,19 @@
 
       font-size: 14px;
       font-family: var(--font-primary);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &--add-to-cart {
       background: var(--color-primary);
       color: var(--color-white);
+
+      &:visited {
+        color: var(--color-white);
+      }
     }
 
     &--add-to-wishlist {
@@ -58,6 +66,10 @@
 
       background: transparent;
       border: 1px solid var(--color-dark-grey);
+
+      &:visited {
+        color: currentColor;
+      }
     }
   }
 

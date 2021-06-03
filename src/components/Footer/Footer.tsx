@@ -44,13 +44,13 @@ const Footer: React.FC = () => {
         </nav>
       ) : (
         <nav className="footer__product-menu">
-          <button className="footer__product-menu--add-to-cart">
+          <Link to="/cart" className="footer__product-menu--add-to-cart">
             Add to Cart
-          </button>
+          </Link>
 
-          <button className="footer__product-menu--add-to-wishlist">
+          <Link to="#" className="footer__product-menu--add-to-wishlist">
             Wishlist
-          </button>
+          </Link>
         </nav>
       )}
     </footer>

@@ -11,7 +11,7 @@ import BackButton from '../../assets/back-button.svg';
 import SearchWithBg from '../../assets/search-with-bg.svg';
 
 export default function Header() {
-  const { pathIsHomepage } = useNav();
+  const { pathIsHomepage, currentPath } = useNav();
 
   return (
     <header className="Header">
@@ -46,7 +46,7 @@ export default function Header() {
               <img src={BackButton} alt="Back Button" />
             </Link>
 
-            <p>Details</p>
+            <p>{currentPath.includes('/cart') ? 'Cart' : 'Details'}</p>
 
             <div className="Header__secondary-navigation--right">
               <img
