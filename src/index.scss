@@ -1,6 +1,7 @@
 :root {
   --color-white: #fff;
   --color-black: #000;
+  --color-light-black: #212c3d;
   --color-grey: #cbd6e0;
   --color-light-grey: #edf2f7;
   --color-dark-grey: #718596;
@@ -13,8 +14,6 @@ html {
 
   height: 100%;
   margin: 0;
-
-  background: var(--color-grey);
 }
 
 * {
@@ -33,4 +32,10 @@ body {
   font-family: 'Noto Sans JP';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  height: inherit;
+}
+
+#root {
+  height: inherit;
 }

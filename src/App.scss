@@ -1,5 +1,6 @@
 .App {
   background: var(--color-white);
+  height: inherit;
 
   max-width: 500px;
 
@@ -8,6 +9,8 @@
 
   &__wrapper {
     margin: 0 -15px;
+    
+    height: inherit;
   }
 
   &__search-container {
