@@ -56,8 +56,8 @@ export default function LandingPage() {
       </section>
 
       <section className="App__products">
-        {allProducts.map((product: ProductInterface) => (
-          <Product key={product.id} {...product} />
+        {allProducts.map((product: ProductInterface, index: number) => (
+          <Product key={index} {...product} />
         ))}
       </section>
     </>

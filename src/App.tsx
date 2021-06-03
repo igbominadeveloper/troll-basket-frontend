@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import LandingPage from './pages/LandingPage/LandingPage';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
+import Cart from './pages/Cart/Cart';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -17,6 +18,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route path="/products/:productId" component={ProductDetails} />
+            <Route path="/cart" component={Cart} />
           </Switch>
         </section>
         <Footer />
